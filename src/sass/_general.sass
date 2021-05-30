@@ -1,6 +1,5 @@
 body
-	height: 100%
-	margin: 0 0 0 0
+	margin: 0
 
 .container
 	width: 1140px
@@ -329,11 +328,14 @@ li
 	padding: 46px 0px 40px 0px
 	min-height: 720px
 	background: url(../img/background/Group1.jpg) center center/cover no-repeat
+	position: relative
 	&_city
 		display: flex
-		justify-content: center
-		align-items: center
-		margin-top: 478px
+		position: absolute
+		bottom: 46px
+		left: 50%
+		text-align: center
+		transform: translateX(-50%)
 		color: $b_c
 		text-transform: uppercase
 		font-weight: 400
